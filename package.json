@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
 
-  "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start"
-  },
+"scripts": {
+  "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider next dev",
+  "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build",
+  "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider next start"
+}
+,
   "dependencies": {
     "@hookform/resolvers": "^1.0.0",
     "date-fns": "^2.16.1",
